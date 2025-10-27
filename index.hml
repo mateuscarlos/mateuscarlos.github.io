@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mateus Carlos — Projetos</title>
+  <meta name="description" content="Landing page dos projetos de Mateus Carlos." />
+  <style>
+    :root { --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --text:#e6eef6; --muted:#9fb7c6; }
+    * { box-sizing: border-box }
+    body{ margin:0; font-family:Inter,system-ui,Segoe UI,Helvetica,Arial,sans-serif; background:linear-gradient(180deg,#071025 0%,#0f1724 100%); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; }
+    .wrap{ width:min(980px,94%); padding:32px; }
+    header{ margin-bottom:24px }
+    h1{ margin:0 0 6px 0; font-size:clamp(1.6rem,2.5vw,2.1rem) }
+    p.lead{ margin:0; color:var(--muted) }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:22px }
+    .card{ background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,.6); border:1px solid rgba(255,255,255,0.05); transition:transform .15s ease, border-color .2s ease }
+    .card:hover{ transform:translateY(-2px); border-color:rgba(255,255,255,0.12) }
+    .card h3{ margin:0 0 6px 0; font-size:1.05rem }
+    .card p{ margin:0 0 12px 0; color:#a7c1cc; font-size:0.95rem; line-height:1.35 }
+    a.btn{ display:inline-block; padding:9px 12px; background:var(--accent); color:#042027; border-radius:8px; text-decoration:none; font-weight:600 }
+    .inline{ display:flex; gap:10px; flex-wrap:wrap }
+    footer{ margin-top:28px; color:#8ca9b6; font-size:0.9rem }
+    footer a{ color:var(--accent); text-decoration:none }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Olá — sou Mateus</h1>
+      <p class="lead">Bem-vindo! Esta é a landing page dos meus projetos.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição curta do projeto (o que faz, stack, objetivo).</p>
+        <!-- Substitua pelo caminho real do projeto -->
+        <div class="inline">
+          <a class="btn" href="https://mateuscarlos.github.io/nome-do-repo-1/" target="_blank" rel="noopener">Abrir</a>
+          <a class="btn" style="background:#1f2937;color:#d1e5ee" href="https://github.com/mateuscarlos/nome-do-repo-1" target="_blank" rel="noopener">Código</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Projeto 2</h3>
+        <p>Pequena descrição do segundo projeto.</p>
+        <div class="inline">
+          <a class="btn" href="https://mateuscarlos.github.io/nome-do-repo-2/" target="_blank" rel="noopener">Abrir</a>
+          <a class="btn" style="background:#1f2937;color:#d1e5ee" href="https://github.com/mateuscarlos/nome-do-repo-2" target="_blank" rel="noopener">Código</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Entre em contato</h3>
+        <p>Fale comigo ou veja mais trabalhos.</p>
+        <div class="inline">
+          <a class="btn" href="mailto:seuemail@exemplo.com">Email</a>
+          <a class="btn" style="background:#1f2937;color:#d1e5ee" href="https://github.com/mateuscarlos" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+      <!-- Duplique cards conforme precisar -->
+    </section>
+
+    <footer>
+      <p>Feito com GitHub Pages • <a href="https://github.com/mateuscarlos" target="_blank" rel="noopener">github.com/mateuscarlos</a></p>
+    </footer>
+  </div>
+</body>
+</html>
